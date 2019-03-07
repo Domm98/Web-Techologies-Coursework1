@@ -2,19 +2,19 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<title>Rot13 Cypher</title>
+		<title>Base64 Cypher</title>
 	</head>
 	<body>
 	
 	<div>
 	<header>
-		<div class="header-title">ROT13 Cypher</div>
+		<div class="header-title">Base64 Cypher</div>
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a>Choose Cypher Type ▼</a>
 				<ul>
-					<li><a href="ROT13.html">ROT13 Encoder</a></li>
+					<li><a href="ROT13.html">Rot13 Encoder</a></li>
 					<li><a href="Base64.html">Base64 Encoder</a></li>
 					<li><a href="Morse.html">Morse Encoder</a></li>
 					<li><a href="Atbash.html">Atbash Encoder</a></li>
@@ -26,20 +26,21 @@
 	</div>
 	
 	<main>
-	<h2>ROT13 ENCODER</h2>
-		<p>Rotate by 13 places, more commonly known as "Rot13" is a simple encrytion method which replaces each letter with the 13th letter after it in the alphabet.
-		Rot13 is an example of the caeser cypher, which was originally developed back in ancient Rome.</p>
+	<h2>BASE64 ENCODER</h2>
+		<p>Base64 is an encoding technique which represents binary data in ASCII text format. Base64 has mainly been used when streaming data over a network, for example an email,
+		to protect the data.</p>
 		
 		<div id="input_area">
 			<textarea rows="5" cols="50" autofocus id="message">Type your message here, then click on the desired button to generate your encoded or decoded text.</textarea>
 			<br/>
-			<button class="Ebutton" onclick="encodeRot13()" id="encode_button">Encode</button>
-			<button class="Dbutton" onclick="decodeRot13()" id="decode_button">Decode</button>
+			<button class="Ebutton" onclick="encodeBase64()" id="encode_button">Encode</button>
+			<button class="Dbutton" onclick="decodeBase64()" id="decode_button">Decode</button>
 		</div>
 		
 		<div id="output_area">
 			<textarea rows="5" cols="50" autofocus id="output">Encoded/decoded message goes here</textarea>
 		</div>
+		<div>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
 	</main>
